@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+</head>
+
+<body>
+
+    <header>
+        <%- include("./partials/header") %>
+    </header>
+
+    <main>
+    
+    <h1><%=pelicula.title%></h1>
+
+    <ul>
+        <li>
+            Duración: <%=pelicula.length%>
+        </li>
+        <li>
+            Fecha de estreno: <%=pelicula.release_date%>
+        </li>
+        <li>
+            Premios: <%=pelicula.awards%>
+        </li>
+        <li>
+            Rating: <%=pelicula.rating%>
+        </li>
+        <li>
+            Género: <%=pelicula.genero.name%>
+        </li>
+        <li>
+            Actores: 
+            <ul>
+                <% for (let i=0; i < pelicula.actores.length; i++) { %>
+                    <li>
+                        <%=pelicula.actores[i].last_name%>
+                        <%=pelicula.actores[i].first_name%>
+                    </li>
+                <% } %>
+
+            </ul>
+        </li>
+    </ul>
+
+    <a href="/peliculas/editar/<%=pelicula.id%>"><button>Editar</button></a>
+    
+    <form action="/peliculas/borrar/<%=pelicula.id%>?_method=delete" method="POST">
+    <button type="submit">Borrar</button>
+    </form>
+
+    </main>
+
+    <footer>
+        <%- include("./partials/footer") %>  
+    </footer>
+
+    </body>
+
+    </html>

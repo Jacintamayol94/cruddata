@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+header a {
+    color: rgb(176, 211, 222);
+    text-decoration: none;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+a {
+    color: rgb(19, 94, 122);
+    text-decoration: none;
+}
+
+main ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+main{
+    margin-left: 20px;
+}
+
+
+
+
