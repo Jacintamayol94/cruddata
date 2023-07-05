@@ -1,0 +1,20 @@
+npx sequelize-cli migration:generate --name nombre-migración
+npx sequelize-cli db:migrate
+
+
+Agregar columna
+
+ async up (queryInterface, Sequelize){
+    queryInterface.addColumn(
+      'actors',
+      'movie_id',
+      {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'movies'
+            key: 'id'
+        }
+      }
+    )
+  },
