@@ -11,10 +11,11 @@
         <%- include("./partials/header") %>
     </header>
 
-    <main>
+    <main class="main-detalle">
     
     <h1><%=pelicula.title%></h1>
 
+    <section class="info-pelicula">
     <ul>
         <li>
             Duración: <%=pelicula.length%>
@@ -45,10 +46,15 @@
         </li>
     </ul>
 
-    <a href="/peliculas/editar/<%=pelicula.id%>"><button>Editar</button></a>
+    </section>
+
+    <div class="botones-detalle">
+    <a href="/peliculas/editar/<%=pelicula.id%>"><button class="button-edit">Editar</button></a>
     
     <form action="/peliculas/borrar/<%=pelicula.id%>?_method=delete" method="POST">
-    <button type="submit">Borrar</button>
+    <button type="submit" class="button-delete">Borrar</button>
+    </div>
+
     </form>
 
     </main>

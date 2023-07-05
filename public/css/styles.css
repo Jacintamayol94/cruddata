@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+
+
 body {
     margin: 0px;
-    background-color: whitesmoke;
+    background-image: url("pulpfictionbn.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    font-family: 'Roboto Slab';
 }
 
 header a {
-    color: rgb(176, 211, 222);
+    color: rgb(62, 193, 232);
     text-decoration: none;
+    font-size: 20px;
 }
 
 header {
@@ -14,10 +22,16 @@ header {
     padding: 10px;
 }
 
+header p {
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 a {
@@ -28,10 +42,141 @@ a {
 main ul li {
     list-style: none;
     margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: 30px;
 }
 
 main{
     margin-left: 20px;
+    background-color: rgba(245, 245, 245, 70%);
+    padding: 20px;
+    margin: 10px 100px;
+    border: 1px rgba(245, 245, 245, 70%);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.creacion-form {
+    margin-left: 20px;
+    background-color: rgba(245, 245, 245, 80%);
+    padding: 20px;
+    margin: 10px 400px;
+    border: 1px rgba(245, 245, 245, 70%);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-detalle {
+    margin: 10px 200px;
+}
+
+.main-edicion {
+    margin: 10px 400px;
+}
+
+.info-pelicula {
+    text-align: left;
+    background-color: whitesmoke;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+.creacion-form div {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:rgb(195, 57, 57);
+    font-weight: 800;
+}
+
+.creacion-form div input {
+    font-size: 20px;
+}
+
+.creacion-form div select {
+    font-size: 20px;
+}
+
+.listado-peliculas {
+    background-color: whitesmoke;
+    width: 50%;
+    border: 1px rgba(245, 245, 245) solid;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+footer {
+    color: rgb(195, 57, 57);
+    margin-left: 30px;
+    margin-top: 60px;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+footer p {
+    background-color: rgba(245, 245, 245);
+    width: 20%;
+    text-align: center;
+}
+
+.button-create {
+    background-color:rgb(195, 57, 57) ;
+    color: white;
+    font-size: 20px;
+    border-color: rgb(195, 57, 57);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.botones-detalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-edit {
+    background-color:rgb(19, 94, 122) ;
+    color: white;
+    font-size: 20px;
+    border-color: rgb(19, 94, 122);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.button-delete {
+    background-color:rgb(62, 193, 232);
+    color: white;
+    font-size: 20px;
+    border-color: rgb(62, 193, 232);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.main-edicion div {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:rgb(195, 57, 57);
+    font-weight: 800;
+}
+
+.main-edicion div input {
+    font-size: 20px;
+}
+
+.main-edicion div select {
+    font-size: 20px;
 }
 
 

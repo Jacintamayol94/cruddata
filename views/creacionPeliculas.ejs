@@ -9,7 +9,10 @@
         <%- include("./partials/header") %>
     </header>
 
+    <section class="creacion-form">
+
     <h1>Creá tu película!</h1>
+
 
     <form action="/peliculas/crear" method="POST">
         <div>
@@ -48,9 +51,11 @@
             </select>
         </div>
 
-        <button type="submit">Crear</button>
+        <button class= "button-create" type="submit">Crear</button>
 
     </form>
+
+    </section>
 
     <footer>
         <%- include("./partials/footer") %> 

@@ -9,6 +9,8 @@
         <%- include("./partials/header") %>
     </header>
 
+    <main class="main-edicion">
+
     <h1>Editar película!</h1>
 
     <form action="/peliculas/editar/<%=pelicula.id%>?_method=put" method="POST">
@@ -56,9 +58,11 @@
             </select>
         </div>
 
-        <button type="submit">Editar</button>
+        <button type="submit" class="button-edit">Editar</button>
 
     </form>
+
+    </main>
 
     <footer>
         <%- include("./partials/footer") %> 
