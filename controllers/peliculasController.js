@@ -9,12 +9,16 @@ let peliculasController = {
                 raw: true
             })
 
-            return res.render("creacionPeliculas", { generos: generos })
+            const directores = await db.Director.findAll({
+                raw: true
+            })
+
+            return res.render("creacionPeliculas", { generos: generos, directores: directores })
 
         } catch (error) {
             console.log(error)
         }
-
+    
     },
     guardado: async (req, res) => {
 

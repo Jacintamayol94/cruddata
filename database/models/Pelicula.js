@@ -49,6 +49,11 @@ module.exports = function(sequelize, dataTypes) {
             timestamps: false
         });
 
+        Pelicula.belongsTo(models.Director, {
+            as: "director",
+            foreignKey: "director_id"
+        });
+
     }
 
     return Pelicula;

@@ -51,6 +51,17 @@
             </select>
         </div>
 
+        <div>
+            <label for="">Director</label>
+            <select name="director">
+                <% for (let i=0; i < directores.length; i++) { %>
+                <option value="<%=directores[i].id%>">
+                    <%=directores[i].first_name%> <%=directores[i].last_name%>
+                </option>
+                <% } %>
+            </select>
+        </div>
+
         <button class= "button-create" type="submit">Crear</button>
 
     </form>
