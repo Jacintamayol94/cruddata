@@ -52,7 +52,7 @@ let peliculasController = {
     },
     detalle: function (req, res) {
         db.Pelicula.findByPk(req.params.id, {
-            include: [{ association: "genero" }, { association: "actores" }]
+            include: [{ association: "genero" }, { association: "actores" }, { association: "director" }]
         })
             .then(function (pelicula) {
                 res.render("detallePelicula", { pelicula: pelicula })
